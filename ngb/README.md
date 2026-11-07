@@ -1,4 +1,4 @@
-# NGB: The Glazed Ring v2.8 — Body Sync + Body Control (PHATOM PMK)
+# NGB: The Glazed Ring v2.9 — Guard Styles, Signature Moves, Body Sync (PHATOM PMK)
 
 Play the fight with your body: your hands are the gloves, your shoulders and hips are the fighter's.
 
@@ -68,3 +68,19 @@ Quick start without syncing: 📷 BODY CONTROL → START → guard up → left j
 - **Stance from your feet**, both ways: put the other foot in front and the fighter switches orthodox ⇄ southpaw. Sync learns both of your stances (and your hip angle in each).
 - **Lower latency:** the tracker runs on every new camera frame the moment it exists (no waiting for the screen refresh), MediaPipe's own smoothing is off (our filter is lighter on the arms), and the glove follows your hand with a short look-ahead. In tests the game glove starts moving one camera frame after your hand does.
 - **Direct mapping table** in the BODY panel: every body movement and the game action it triggers.
+
+## v2.9 — Guard styles + signature moves
+**Guard styles** (each one really moves the hands, so the arms block different shots, plus the craft that goes with it):
+- **Peek-a-Boo** (Cus D'Amato): gloves tight on the cheekbones, elbows on the ribs. Faster head movement, every slip loads a counter, elbows eat body hooks. Weakness: uppercuts split it.
+- **Philly Shell** (George Benton): lead arm across the belly, rear glove on the chin. Straights and hooks on the lead side roll off the shoulder (−75%) and open a counter. Weakness: hooks over the rear side.
+- **Long Guard** (George Foreman): lead arm out, open glove in his face. Smothers straights. Weakness: the body.
+- **Cross-Arm** (Archie Moore): forearms stacked. Straights die on the arms and you get stamina back inside it. Weakness: uppercuts up the middle.
+- How to pick one: **camera** — just put your hands in that shell (Body Sync now learns your version of all four). **Controller** — hold both triggers + click L3. **Keyboard** — V. **Menu** — the GUARD pill sets your default.
+- Every opponent fights from a shell (Graham = Cross-Arm, Pop Grease = Long Guard, Skillet = Peek-a-Boo, Savannah AI = Philly), and the AI reads yours and goes where it's open.
+
+**Signature moves** — no hotkeys; you earn them by doing the real thing (camera, controller or AI):
+- **Check hook** (Mayweather): lead hook while you pivot, or as he walks in. +35%, knocks him off balance.
+- **On the angle** (Lomachenko): land while he isn't square to you. +20%.
+- **Dempsey roll**: hook thrown out of a roll / from the side your head just weaved to. +30%.
+- **Sugar Ray symphony**: alternating hands landing in rhythm; from the 3rd shot each hits harder, the 5th rocks him.
+- **Rope-a-dope** (Ali): back on the ropes with your guard up, the ropes soak 40% and every shot costs him stamina; after 3, your rear straight off the ropes hits +50%.
