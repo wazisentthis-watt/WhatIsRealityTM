@@ -1,4 +1,4 @@
-# NGB: The Glazed Ring v2.6 — Body Control (PHATOM PMK)
+# NGB: The Glazed Ring v2.7 — Sweet Science + Body Control (PHATOM PMK)
 
 Play the fight with your body: your hands are the gloves, your shoulders and hips are the fighter's.
 
@@ -38,3 +38,19 @@ Testing on the same computer instead: run `python3 -m http.server 8080` in this 
 - Film yourself however you train: phone in front, or off to the side like your bag videos (portrait is fine). The two calibration punches tell the game which way you face, and "forward" follows your hips as you move around.
 - Tuned on real bag-work footage: jabs, crosses and hooks read correctly from a side-on, tilted phone.
 - Arms: the shoulder rolls up and forward on long punches, the elbow line is steadier, held guards stay calm, and fast hands stay instant.
+
+## v2.7 — Sweet Science
+- **Damage:**
+  - Clean head shots swell the side they land on; hard ones can open cuts, and blood runs into that eye. Your screen closes on that side, and shots from the blind side land harder.
+  - Straights hurt the nose; uppercuts hurt the jaw and can knock the mouthpiece out.
+- **Body shots:**
+  - Lead-hand hook to the body = liver shot: a beat later the legs can fold.
+  - Straight to the body = solar plexus: the wind goes out.
+- **Ring craft:**
+  - Rolling with a hook takes the sting out.
+  - A pull-counter straight lands harder, and so does a punch your opponent walks onto.
+  - Doubled and tripled jabs land a little heavier.
+  - Overhands to the skull and body shots into an elbow can hurt your hand.
+- **Between rounds:** 60 s on the stool. Spend it on Enswell, adrenaline, Vaseline, ice, breathing or the mouthpiece, or throw in the towel.
+- **Officials:** a bad cut brings the doctor (and can stop the fight). Open scoring is announced after rounds 4 and 8, and a 10-second clapper sounds near the end of each round.
+- **RULES** (menu): Modern 10 oz · 1920s 5 oz horsehair · Bare knuckle.
