@@ -1,4 +1,4 @@
-# NGB: The Glazed Ring v2.7 — Sweet Science + Body Control (PHATOM PMK)
+# NGB: The Glazed Ring v2.8 — Body Sync + Body Control (PHATOM PMK)
 
 Play the fight with your body: your hands are the gloves, your shoulders and hips are the fighter's.
 
@@ -9,10 +9,16 @@ Play the fight with your body: your hands are the gloves, your shoulders and hip
 
 Testing on the same computer instead: run `python3 -m http.server 8080` in this folder and open http://localhost:8080.
 
-## Calibrate (about 10 seconds)
-1. Step back until your head, both hands and hips are in the picture (2–3 m; phone at chest height, landscape, light in front of you).
-2. Hands up in your guard — hold still for a second.
-3. Jab with your LEFT hand, then throw your RIGHT. (If your camera is mirrored, the game notices and swaps hands for you.)
+## First time: BODY SYNC (about 3 minutes)
+Menu → **📷 BODY SYNC**. The fighter shows each move, then you do it:
+1. Get in the picture — head, both gloves, hips **and feet** (2–3 m back, phone at chest height, landscape, light in front of you).
+2. Guard up, hold still. Then ONE straight punch with your **LEFT** hand (this tells the game if your camera flips the picture).
+3. Jab ×3, cross ×3, lead hook ×3, rear hook ×3, lead uppercut ×3, rear uppercut ×3, body shots ×3 each side.
+4. Body guard (elbows over the ribs), slip left/right, duck, lean back — twice each.
+5. Switch to your other stance and hold, then switch back.
+You get speed, reach and "back to the chin" feedback on every rep, and a summary at the end. The game saves how YOU throw each punch and uses it from then on. **DOWNLOAD MY SYNC DATA** saves a file you can send over for tuning.
+
+Quick start without syncing: 📷 BODY CONTROL → START → guard up → left jab → right jab.
 
 ## What's in here
 - `index.html` — the whole game (one file).
@@ -54,3 +60,11 @@ Testing on the same computer instead: run `python3 -m http.server 8080` in this 
 - **Between rounds:** 60 s on the stool. Spend it on Enswell, adrenaline, Vaseline, ice, breathing or the mouthpiece, or throw in the towel.
 - **Officials:** a bad cut brings the doctor (and can stop the fight). Open scoring is announced after rounds 4 and 8, and a 10-second clapper sounds near the end of each round.
 - **RULES** (menu): Modern 10 oz · 1920s 5 oz horsehair · Bare knuckle.
+
+## v2.8 — Body Sync (the game learns you)
+- **Body Sync tutorial** (menu card, or BODY panel → BODY SYNC): 18 short steps, 3 reps per punch per side, with a demo and a coaching tip for each. It records your own punch paths and classifies your punches against them first (falls back to the general boxing rules if you haven't synced).
+- **Your trigger speed and reach** come from your real reps, so soft-but-real punches register and shadow-flinches don't.
+- **Guard, per hand:** face guard ■ vs body guard ▼, shown on the BODY chip (e.g. `L■ R▼`) and in the game.
+- **Stance from your feet**, both ways: put the other foot in front and the fighter switches orthodox ⇄ southpaw. Sync learns both of your stances (and your hip angle in each).
+- **Lower latency:** the tracker runs on every new camera frame the moment it exists (no waiting for the screen refresh), MediaPipe's own smoothing is off (our filter is lighter on the arms), and the glove follows your hand with a short look-ahead. In tests the game glove starts moving one camera frame after your hand does.
+- **Direct mapping table** in the BODY panel: every body movement and the game action it triggers.
