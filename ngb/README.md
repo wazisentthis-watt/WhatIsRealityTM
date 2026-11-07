@@ -1,4 +1,4 @@
-# NGB: The Glazed Ring v2.5 — Body Control (PHATOM PMK)
+# NGB: The Glazed Ring v2.6 — Body Control (PHATOM PMK)
 
 Play the fight with your body: your hands are the gloves, your shoulders and hips are the fighter's.
 
@@ -33,3 +33,8 @@ Testing on the same computer instead: run `python3 -m http.server 8080` in this 
   - TRIGGER: easy / normal / firm — how hard you have to throw;
   - FEEL: smooth / normal / snappy;
   - LAB: a live readout of what the tracker sees, with frame timing.
+
+## v2.6 — any camera angle, more natural arms
+- Film yourself however you train: phone in front, or off to the side like your bag videos (portrait is fine). The two calibration punches tell the game which way you face, and "forward" follows your hips as you move around.
+- Tuned on real bag-work footage: jabs, crosses and hooks read correctly from a side-on, tilted phone.
+- Arms: the shoulder rolls up and forward on long punches, the elbow line is steadier, held guards stay calm, and fast hands stay instant.
