@@ -1,4 +1,4 @@
-# NGB: The Glazed Ring v3.0 — The Corner, Direct Footwork, Guard Styles, Body Sync (PHATOM PMK)
+# NGB: The Glazed Ring v3.1 — Balance Engine, The Corner, Direct Footwork, Body Sync (PHATOM PMK)
 
 Play the fight with your body: your hands are the gloves, your shoulders and hips are the fighter's.
 
@@ -94,3 +94,16 @@ Quick start without syncing: 📷 BODY CONTROL → START → guard up → left j
 - Water bottle to his mouth (a sip, not a flood) · bucket under his mouth so he spits (rinses the mouthpiece) · enswell to rub down a swelling.
 - TALK: hold the mic and tell him what you saw. "He keeps hitting you with that left jab — slip and roll left more, you got this" → +3 agility, +3 chin and a read on his jab (it lands 20% softer next round). Generic talk gets less, insults cost focus. Works in Chrome/Edge/Safari with mic permission (open the GitHub Pages link, not the claude.ai preview). No mic → type it or tap a line.
 - Controller: QUICK GREASE · SIP · SPIT · lines · STAND UP.
+
+## v3.1 — Balance engine (real stance physics)
+Every fighter now stands on two real feet, every frame:
+- **Base of support** = the two planted feet. A foot in the middle of a real step, a switch or a pivot isn't base — you're on one foot.
+- **Centre of mass** = hips + chest + head, plus the lean the game adds (pulling back loads the rear foot ~75%, a rear-hand power shot drives it over the lead foot).
+- **Extrapolated centre of mass** (Hof 2005): COM + unplanned momentum / √(g/leg length). Walking where you meant to go doesn't count; a missed power shot, a punch that moves you or a bad pivot does. If it leaves your base and no foot can step in time → **stumble** (can't punch, open to counters).
+- **Weight distribution** (the dot on the new balance meter under your bars: REAR ↔ LEAD; green solid, amber narrow, red off-balance/one foot/switching).
+- **Pivots are a skill now.** You turn on the ball of a LOADED foot: weight on the lead foot (after a jab or cross) = clean lead-foot pivot; weight back, mid power-cross on the wrong foot, moving the other way, tired legs, hurt, feet crossed = sloppy or you trip. Lead hook + lead-foot pivot is the check hook — it helps. Clean pivots move you ~0.5 m and 30–40° off his line; your Balance + Agility make you consistent, and clean reps grow them.
+- **Switch stance actually works**: R3 on the pad, B on the keyboard, A+B still works, camera = switch your feet (or, with feet out of shot and a bladed stance, your hips). Stick forward = step through (moves you in), back = drop step (moves you out), neutral = shuffle. The stance flips when the feet pass — that moment you're on one foot, and a shot lands 25% harder and moves you (CAUGHT SWITCHING).
+- **Turning needs feet**: small turns are the upper body; big ones need a foot turn after a reaction delay — so after a clean pivot he really is off-line for a beat (and so are you after his).
+- AI fighters use it too: they pivot when their weight is right, off the ropes, and they punish your stumbles.
+
+Sources for the model: Hof, "The condition for dynamic stability" (J Biomech 2005) — [pdf](https://braceworks.ca/wp-content/uploads/2016/05/hof-condition-for-dynamic-stability.pdf); Curtze et al., "Notes on the margin of stability" (2023) — [preprint](https://cris.maastrichtuniversity.nl/files/177130543/Notes_on_the_margin_of_stability_2023_Curtze_Buurke_McCrum_Preprint_v2.pdf); stance & weight: [ExpertBoxing — the perfect stance](https://expertboxing.com/the-perfect-boxing-stance), [3 axes of boxing](https://expertboxing.com/the-3-axes-of-boxing), [2-legged punching](https://expertboxing.com/power-punching-secrets-part-1-2-legged-punching).
