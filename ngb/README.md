@@ -1,4 +1,4 @@
-# NGB: The Glazed Ring v2.9 — Guard Styles, Signature Moves, Body Sync (PHATOM PMK)
+# NGB: The Glazed Ring v3.0 — The Corner, Direct Footwork, Guard Styles, Body Sync (PHATOM PMK)
 
 Play the fight with your body: your hands are the gloves, your shoulders and hips are the fighter's.
 
@@ -84,3 +84,13 @@ Quick start without syncing: 📷 BODY CONTROL → START → guard up → left j
 - **Dempsey roll**: hook thrown out of a roll / from the side your head just weaved to. +30%.
 - **Sugar Ray symphony**: alternating hands landing in rhythm; from the 3rd shot each hits harder, the 5th rocks him.
 - **Rope-a-dope** (Ali): back on the ropes with your guard up, the ropes soak 40% and every shot costs him stamina; after 3, your rear straight off the ropes hits +50%.
+
+## v3.0 — The corner + footwork that actually works
+**Footwork (camera):** the camera stepping code had a bug that made it do nothing — fixed. Now your steps ARE the fighter's steps: step in, he steps in; stop, he stops; step sideways, he moves sideways — in your own body's directions whatever angle the phone sees you from. A big step held keeps pressing that way. A quick hip turn is a pivot even when your feet are out of the picture.
+**Pivots (all controls):** a press is a real pivot step — about 70° around your front foot in a quarter second — and he loses you for a beat, so you're on his flank (ON THE ANGLE: +20%). Holding X/Y keeps turning after the step.
+**Punch angles:** AIM in the BODY panel. ASSIST (default) bends the end of your real punch onto his head/body so camera angle and tracking error don't send it wide; STRONG bends more; RAW is pure 1:1.
+**THE CORNER — 10 seconds, its own mini-game:** close-up of your fighter's face.
+- Vaseline: dig your finger in the jar (top-down; the jelly grooves where you drag), smear his brows and cheekbones exactly how you do it. Scored on coverage; grease in his eye blurs it next round.
+- Water bottle to his mouth (a sip, not a flood) · bucket under his mouth so he spits (rinses the mouthpiece) · enswell to rub down a swelling.
+- TALK: hold the mic and tell him what you saw. "He keeps hitting you with that left jab — slip and roll left more, you got this" → +3 agility, +3 chin and a read on his jab (it lands 20% softer next round). Generic talk gets less, insults cost focus. Works in Chrome/Edge/Safari with mic permission (open the GitHub Pages link, not the claude.ai preview). No mic → type it or tap a line.
+- Controller: QUICK GREASE · SIP · SPIT · lines · STAND UP.
