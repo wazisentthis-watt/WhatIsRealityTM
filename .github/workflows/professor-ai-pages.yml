@@ -4,6 +4,7 @@ on:
     branches: [main]
     paths:
       - 'professor-ai/**'
+      - 'your/**'
       - '.github/workflows/professor-ai-pages.yml'
   workflow_dispatch:
 permissions:
