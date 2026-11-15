@@ -21,4 +21,4 @@ jobs:
         with:
           node-version: '22'
       - name: Verify YOUR markup, scripts and source boundaries
-        run: node --test your/smoke.test.mjs
+        run: node --test your/*.test.mjs
