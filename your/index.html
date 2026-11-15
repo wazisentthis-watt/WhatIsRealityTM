@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#0c1220">
+<title>YOUR | One MELLA, Every Reality · WIR</title>
+<style>
+:root{color-scheme:dark;--bg:#080d18;--panel:#121c2e;--line:#32445c;--ink:#edf6f8;--muted:#a9bacd;--mint:#7ef4c8;--gold:#ffdf8b;--pink:#fb9bae}
+*{box-sizing:border-box}html,body{margin:0;min-height:100%;background:radial-gradient(circle at 75% 10%,#1b2941,#080d18 63%);color:var(--ink);font:15px/1.5 system-ui,-apple-system,Segoe UI,sans-serif}
+button,input,select{font:inherit}button{cursor:pointer}a{color:var(--mint)}button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+header{display:flex;justify-content:space-between;align-items:center;gap:14px;padding:16px clamp(16px,4vw,40px);border-bottom:1px solid #293448;background:#0c1224cc}
+.logo{font-size:clamp(21px,3.1vw,32px);font-weight:900;letter-spacing:.12em;line-height:1}.logo b{color:var(--mint)}
+.subtitle{color:var(--muted);font-size:12px;letter-spacing:.15em;text-transform:uppercase;margin-top:6px}
+.chip{display:inline-flex;gap:6px;align-items:center;padding:6px 10px;border:1px solid #42546a;border-radius:24px;color:var(--gold);font-size:11px;font-weight:700;white-space:nowrap}
+.layout{display:grid;grid-template-columns:minmax(215px,265px) minmax(0,1fr) minmax(220px,280px);gap:16px;max-width:1580px;margin:auto;padding:18px}
+.panel{border:1px solid var(--line);border-radius:18px;background:linear-gradient(165deg,#17253aee,#0e1829ee);box-shadow:0 20px 50px #0003}
+nav,.right{padding:15px}h2,h3,p{margin-top:0}h2{font-size:15px;letter-spacing:.09em;text-transform:uppercase;color:var(--mint);margin-bottom:10px}h3{font-size:14px;color:var(--gold);margin:18px 0 8px}
+.world{display:flex;width:100%;text-align:left;justify-content:space-between;align-items:center;gap:12px;padding:11px;border-radius:11px;background:#101c2c;border:1px solid transparent;color:var(--ink);margin-bottom:7px}
+.world:hover,.world.active{background:#21374b;border-color:#5db6b0}.world small{display:block;font-size:11px;color:var(--muted)}.world b{font-size:13px}.world .symbol{font-size:21px}
+.play{padding:14px;min-width:0;display:flex;flex-direction:column;gap:12px}
+.statusline{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:baseline}.statusline strong{font-size:19px}.statusline span{font-size:12px;color:var(--muted)}
+.stage{width:100%;aspect-ratio:16/9;border-radius:12px;display:block;background:#0b1420;image-rendering:pixelated;touch-action:none;border:1px solid #44546b}
+.toolbar{display:flex;flex-wrap:wrap;gap:8px}.btn{border:1px solid #40606c;border-radius:10px;padding:9px 12px;background:#263b4c;color:#f0fafc;font-weight:700}.btn:hover{background:#32586a}.btn.hot{background:var(--mint);border-color:var(--mint);color:#101c2a}.btn:disabled{opacity:.45;cursor:not-allowed}
+.hint{color:var(--muted);font-size:13px;min-height:40px} .hint b{color:var(--gold)}
+.stats{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}.stat{background:#071321;border:1px solid #2d4257;padding:10px;border-radius:10px}
+.stat small{display:block;color:var(--muted);font-size:11px}.stat strong{font-size:20px;color:var(--mint)}
+label{display:block;color:var(--muted);font-size:12px;margin:10px 0 4px}input,select{width:100%;background:#071221;border:1px solid #46566c;border-radius:8px;color:var(--ink);padding:8px}
+.log{height:230px;overflow:auto;display:flex;flex-direction:column;gap:7px}.log-item{padding:8px;border-radius:8px;background:#0b1727;border-left:3px solid var(--mint);font-size:12px}.log-item time{display:block;color:var(--muted);font-size:10px}
+footer{max-width:1580px;margin:0 auto 30px;padding:0 18px;color:var(--muted);font-size:12px}.sourcelinks{display:flex;gap:12px;flex-wrap:wrap}.fine{color:var(--muted);font-size:12px}
+.touch{display:none;align-items:center;justify-content:space-between;gap:12px}.pad{display:grid;grid-template-columns:repeat(3,44px);gap:3px}.pad .btn{padding:8px 0}.pad .blank{visibility:hidden}
+.kicker{color:var(--gold);font-size:12px;font-weight:700;letter-spacing:.06em}
+@media(max-width:1070px){.layout{grid-template-columns:190px minmax(0,1fr)}.right{grid-column:1/-1;display:grid;grid-template-columns:1fr 1fr;gap:20px}.right>section{min-width:0}}
+@media(max-width:720px){header{padding:12px 14px}.layout{display:flex;flex-direction:column;padding:10px;gap:10px}nav{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px;padding:12px}nav h2{grid-column:1/-1;margin:0}.world{margin:0;min-height:56px;padding:8px}.world b{font-size:12px}.world small{font-size:10px}.play{padding:10px}.right{display:flex;flex-direction:column;padding:12px;gap:10px}.touch{display:flex}.stage{aspect-ratio:16/10}}
+</style></head>
+<body>
+<header><div><div class="logo">WHAT IS <b>YOUR</b> REALITY?</div><div class="subtitle">One MELLA · Eight Brantacles · One living record</div></div><span class="chip">◈ PLAYABLE PREVIEW · NOT CANON</span></header>
+<main class="layout">
+<nav class="panel" aria-label="Worlds"><h2>World doors</h2>
+<button class="world active" data-world="valence"><span><b>02 · Valence Life</b><small>Home, work, recover</small></span><span class="symbol">🏠</span></button>
+<button class="world" data-world="wishborn"><span><b>01 · WishBorn</b><small>DreamSeed garden</small></span><span class="symbol">🌱</span></button>
+<button class="world" data-world="creature"><span><b>06 · KoPani / ANI</b><small>Bond with Na</small></span><span class="symbol">🐾</span></button>
+<button class="world" data-world="gridiron"><span><b>04 · Gridiron</b><small>Timing challenge</small></span><span class="symbol">🏈</span></button>
+<button class="world" data-world="metal"><span><b>03 · Metal</b><small>Reaction combat</small></span><span class="symbol">⚡</span></button>
+<button class="world" data-world="ghouly"><span><b>05 · GHOULIE</b><small>Source pending</small></span><span class="symbol">🌫️</span></button>
+<button class="world" data-world="worldbuilder"><span><b>07 · Worldbuilder</b><small>Source pending</small></span><span class="symbol">🏗️</span></button>
+<button class="world" data-world="arcade"><span><b>08 · Reality Arcade</b><small>Source pending</small></span><span class="symbol">🛹</span></button>
+</nav>
+<section class="play panel">
+<div class="statusline"><strong id="worldTitle">VALENCE LIFE · MORNING</strong><span id="clock">DAY 1 · 08:00</span></div>
+<canvas id="stage" class="stage" width="960" height="540" aria-label="Playable game world, arrow keys or WASD to move, E or Action to interact"></canvas>
+<div id="hint" class="hint">Move toward the work desk, bed or glowing doors. Press <b>E</b> to interact.</div>
+<div class="toolbar"><button id="action" class="btn hot">E · INTERACT</button><button id="home" class="btn">⌂ RETURN HOME</button><button id="export" class="btn">↓ EXPORT SAVE</button><button id="reset" class="btn">↻ RESET DEMO</button></div>
+<div class="touch" aria-label="Touch game controls"><div class="pad"><span class="blank"></span><button class="btn" data-move="up">▲</button><span class="blank"></span><button class="btn" data-move="left">◀</button><button class="btn" data-move="down">▼</button><button class="btn" data-move="right">▶</button></div><button id="actionTouch" class="btn hot">✦ ACTION</button></div>
+<div class="fine">Keyboard: WASD / arrows + E · Gamepad: left stick + A · Touch: D-pad + Action. Progress saves in this browser only.</div>
+</section>
+<aside class="right panel">
+<section><h2>MELLA identity</h2><label for="name">Name</label><input id="name" maxlength="22" value="MELLA" aria-label="MELLA name"><label for="crown">Crown element (preview)</label><select id="crown"><option>Carbon</option><option>Oxygen</option><option>Nitrogen</option><option>Hydrogen</option><option>Gallium</option><option>Phosphorus</option></select><div class="fine" style="margin-top:7px">Core: Hydrogen + Oxygen · Root: Earth + Water. Demo placeholders, not canon.</div>
+<div class="stats" style="margin-top:13px">
+<div class="stat"><small>Electrons / coins</small><strong id="coins">25</strong></div><div class="stat"><small>Energy</small><strong id="energy">80</strong></div>
+<div class="stat"><small>XP</small><strong id="xp">0</strong></div><div class="stat"><small>Na trust</small><strong id="trust">0</strong></div>
+<div class="stat"><small>Dream growth</small><strong id="growth">0</strong></div><div class="stat"><small>Training wins</small><strong id="wins">0</strong></div>
+</div></section>
+<section><h3>Living consequence log</h3><div id="log" class="log" role="log" aria-live="polite"></div><label for="importSave">Import YOUR save file</label><input type="file" id="importSave" accept=".json,application/json"><p class="fine" style="margin-top:10px">Only simulated game values are stored. No real banking, medical or property records. No account or cross-device sync.</p></section>
+</aside>
+</main>
+<footer><p><span class="kicker">SOURCE SIPHON · VERTICAL SLICE 0.1</span> · Inspired by the supplied Valence Life ZIP, Valence v0.4 business pack, WIR Studio protocol and Octec registry. Five micro-systems share one save, but legacy full games and their large assets have <b>not</b> been imported. Art is procedural and provisional.</p>
+<div class="sourcelinks"><a href="https://github.com/wazisentthis-watt/wir-100-studio" target="_blank" rel="noopener">Private studio coordination</a><a href="https://drive.google.com/file/d/1FryE_BltNvTqYamkpiIfyLYMsFssnFIC/view" target="_blank" rel="noopener">Valence source on Drive</a><a href="https://github.com/wazisentthis-watt/WhatIsRealityTM" target="_blank" rel="noopener">Public website source</a></div></footer>
+<script>
+(function(){
+"use strict";
+var KEY="wir.your.vertical.v1", SCHEMA="wir.your.slice.v0.1";
+var canvas=document.getElementById("stage"),ctx=canvas.getContext("2d");
+var titles={valence:"VALENCE LIFE · YOUR NEIGHBORHOOD",wishborn:"WISHBORN · DREAMSEED GARDEN",creature:"KOPANI · LIVING BOND",gridiron:"ELEMENTAL GRIDIRON · ROUTE TIMING",metal:"METAL · REACTION DOJO",ghouly:"GHOULIE TOOLS · AWAITING SOURCE",worldbuilder:"WORLDBUILDER · AWAITING SOURCE",arcade:"REALITY ARCADE · AWAITING SOURCE"};
+var activeKeys={}, heldMove=null, actionHeld=false, gamepadActionWasDown=false, last=0, lastAction=0, world="valence", notice="", noticeUntil=0;
+var created=Date.now();
+var defaults=function(){return {schema:SCHEMA,player:{id:"your-demo-mella",name:"MELLA",crown:"Carbon",core:["Hydrogen","Oxygen"],root:["Earth","Water"],x:7,y:7},progress:{coins:25,energy:80,xp:0,day:1,hour:8,trust:0,seeds:2,growth:0,gardenStage:0,gridiron:0,metalHits:0,wins:0},companions:[],inventory:{relics:[]},sections:{},log:[]};};
+var state=defaults();
+function clean(raw){if(!raw||raw.schema!==SCHEMA||!raw.player||!raw.progress||!Array.isArray(raw.log))throw Error("Unsupported save format");var base=defaults(),p=raw.progress,r=raw.player; base.player.name=String(r.name||"MELLA").slice(0,22);base.player.crown=["Carbon","Oxygen","Nitrogen","Hydrogen","Gallium","Phosphorus"].includes(r.crown)?r.crown:"Carbon";["coins","energy","xp","day","hour","trust","seeds","growth","gardenStage","gridiron","metalHits","wins"].forEach(function(k){var v=Number(p[k]);if(Number.isFinite(v))base.progress[k]=Math.max(0,Math.min(100000,Math.floor(v)));});base.progress.energy=Math.min(100,base.progress.energy);base.progress.hour%=24; base.progress.day=Math.max(1,base.progress.day);base.sections=(raw.sections&&typeof raw.sections==="object")?raw.sections:{};base.log=raw.log.slice(-60).filter(function(x){return x&&typeof x.type==="string"&&typeof x.game==="string";}).map(function(x){return {id:String(x.id||"").slice(0,50),type:String(x.type).slice(0,30),game:String(x.game).slice(0,24),who:"your-demo-mella",what:String(x.what||"").slice(0,170),ts:String(x.ts||"").slice(0,40)};});base.companions=Array.isArray(raw.companions)?raw.companions.filter(function(x){return x&&x.id==="Na";}).slice(0,1):[];return base;}
+try{var s=localStorage.getItem(KEY);if(s)state=clean(JSON.parse(s));}catch(e){notice="Save unreadable; fresh local demo started";}
+function save(){try{localStorage.setItem(KEY,JSON.stringify(state));}catch(e){notice="Browser storage unavailable. Export a save to keep progress.";}refresh();}
+function event(type,game,what){var allowed=["win","loss","coins_earned","companion_met","trust_changed","injury","draft_pick","relic_found","chapter_cleared","quest_done","fight_finished","season_week_done","shop_bought","rival_grew"];if(!allowed.includes(type))throw Error("Undeclared event");state.log.push({id:"ev-"+Date.now()+"-"+state.log.length,game:game,type:type,who:state.player.id,what:what,ts:new Date().toISOString()});state.log=state.log.slice(-60);save();}
+function msg(s){notice=s;noticeUntil=performance.now()+3600;refresh();}
+function tickHour(h){var p=state.progress;p.hour+=h;while(p.hour>=24){p.hour-=24;p.day++;} }
+function clamp(n,a,b){return Math.max(a,Math.min(b,n));}
+function refresh(){var p=state.progress;["coins","energy","xp","trust","growth","wins"].forEach(function(k){document.getElementById(k).textContent=p[k];});document.getElementById("clock").textContent="DAY "+p.day+" · "+String(p.hour).padStart(2,"0")+":00";document.getElementById("worldTitle").textContent=titles[world];document.getElementById("name").value=state.player.name;document.getElementById("crown").value=state.player.crown;document.querySelectorAll("[data-world]").forEach(function(b){b.classList.toggle("active",b.dataset.world===world);});var l=document.getElementById("log");l.replaceChildren();state.log.slice(-9).reverse().forEach(function(e){var d=document.createElement("div");d.className="log-item";var t=document.createElement("time");t.textContent=e.game+" · "+e.type;var desc=document.createElement("span");desc.textContent=e.what;d.append(t,desc);l.appendChild(d);});if(!state.log.length){l.textContent="No events yet. Start by working, planting, training or meeting Na.";}}
+var pos={valence:[7,7],wishborn:[5,7],creature:[5,7],gridiron:[6,8],metal:[5,8],ghouly:[5,7],worldbuilder:[5,7],arcade:[5,7]};
+function travel(to){if(!titles[to])return;state.sections[world]={x:state.player.x,y:state.player.y};world=to;var point=state.sections[to]||{x:pos[to][0],y:pos[to][1]};state.player.x=clamp(Number(point.x)||5,1,18);state.player.y=clamp(Number(point.y)||7,2,10);msg(to==="ghouly"||to==="worldbuilder"||to==="arcade"?"This section is a future source port. No fabricated game rewards.":"Entered "+titles[to]);hint();save();}
+function near(x,y,r){return Math.hypot(state.player.x-x,state.player.y-y)<=r;}
+function interact(){var now=performance.now();if(now-lastAction<350)return;lastAction=now;var p=state.progress;
+if(["ghouly","worldbuilder","arcade"].includes(world)){msg("Original game source not imported. Visit another playable section.");return;}
+if(world==="valence"){
+ if(near(15,4,3)){if(p.energy<15){msg("Too tired to work. Sleep first.");return;}p.coins+=18;p.xp+=5;p.energy-=18;tickHour(4);event("coins_earned","valence","Worked a four-hour shift: +18 electrons, -18 energy.");msg("Shift complete. Money earned and fatigue carried forward.");return;}
+ if(near(4,9,2.6)){p.energy=clamp(p.energy+52,0,100);tickHour(8);event("quest_done","valence","Recovered at home; energy restored.");msg("Rested. The world clock advanced eight hours.");return;}
+ if(near(5,3,2.5))return travel("wishborn");
+ if(near(13,10,2.5))return travel("gridiron");
+ if(near(17,8,2.5))return travel("metal");
+ if(near(9,5,2))return travel("creature");
+ msg("Go near HOME BED, WORK, or a world gate.");return;
+}
+if(world==="wishborn"){if(!near(12,6,4)){msg("Approach the garden plot to interact.");return;}if(p.gardenStage===0){if(p.seeds<1){msg("No DreamSeeds left. Bond with Na for one.");return;}p.seeds--;p.gardenStage=1;p.growth+=1;tickHour(1);event("quest_done","wishborn","DreamSeed planted in living soil.");msg("DreamSeed planted. Return to water it.");return;}if(p.gardenStage<3){p.gardenStage++;p.growth+=2;p.energy=clamp(p.energy-5,0,100);tickHour(2);event("quest_done","wishborn","Watered DreamSeed: growth stage "+p.gardenStage);msg("Garden growth persisted into MELLA's profile.");return;}p.gardenStage=0;p.seeds+=2;p.growth+=5;p.xp+=12;event("relic_found","wishborn","Harvested a WishBloom and two new DreamSeeds.");msg("WishBloom harvested! Two DreamSeeds returned.");return;}
+if(world==="creature"){if(!near(12,6,4)){msg("Approach Na. Trust grows by proximity and care.");return;}if(p.energy<8){msg("Na senses fatigue. Rest first.");return;}if(p.seeds<1){msg("Na would like a DreamSeed from the garden.");return;}p.seeds--;p.energy-=8;p.trust+=2;p.xp+=6;if(!state.companions.length){state.companions.push({id:"Na",bond:1});event("companion_met","creature","Met KoPani Na; persistent companion ID Na.");}event("trust_changed","creature","Fed Na a DreamSeed: trust +2.");msg("Na remembers your kindness. Bond persists in all worlds.");return;}
+if(world==="gridiron"){if(p.energy<5){msg("Too tired to run a route.");return;}var phase=(Math.sin(performance.now()/600)+1)/2;var success=Math.abs(phase-.5)<.13;p.energy-=5;tickHour(1);if(success){p.gridiron++;p.xp+=8;event("quest_done","gridiron","Timed catch #"+p.gridiron+" secured.");msg("CATCH! Rhythm and patience paid off.");if(p.gridiron%3===0){p.wins++;p.coins+=20;event("win","gridiron","Three-catch training series complete. +20 electrons.");}}else{event("loss","gridiron","Missed timing window. -5 energy.");msg("MISSED. Catch when the moving marker enters the mint zone.");}save();return;}
+if(world==="metal"){if(p.energy<6){msg("Not enough energy to spar.");return;}if(!near(enemy.x,enemy.y,3.1)){msg("Close the distance to strike the training drone.");return;}p.energy-=6;var precision=Math.abs(Math.sin(performance.now()/500));if(precision<.72){msg("The drone dodged. Wait for the cyan pulse.");return;}enemy.vy=-7;enemy.air=1;enemy.y=clamp(enemy.y-1,2,10);p.metalHits++;p.xp+=7;event("fight_finished","metal","Precision hit "+p.metalHits+". Stable knockback recovery.");if(p.metalHits%3===0){p.wins++;p.coins+=12;event("win","metal","Dojo trio cleared, +12 electrons.");}msg("Precision strike! Knockback will land and reset.");save();return;}
+}
+var enemy={x:13,y:8,vy:0,air:0},phase=0;
+function rect(x,y,w,h,c){ctx.fillStyle=c;ctx.fillRect(x,y,w,h);}function txt(t,x,y,size,color,align){ctx.fillStyle=color||"#eef7fa";ctx.font="bold "+(size||18)+"px system-ui";ctx.textAlign=align||"left";ctx.fillText(t,x,y);ctx.textAlign="left";}
+function object(x,y,color,label,emoji){var px=x*48,py=y*44+7;ctx.fillStyle="#060d17a8";ctx.beginPath();ctx.ellipse(px,py+16,34,12,0,0,Math.PI*2);ctx.fill();ctx.fillStyle=color;ctx.beginPath();ctx.arc(px,py-12,26,0,7);ctx.fill();txt(emoji||"✦",px,py-3,25,"#0b1520","center");txt(label,px,py+42,12,"#f4f9fd","center");}
+function background(){var sky=ctx.createLinearGradient(0,0,0,540);sky.addColorStop(0,world==="metal"?"#172341":world==="wishborn"?"#133b40":"#1a2844");sky.addColorStop(1,"#0d1b24");ctx.fillStyle=sky;ctx.fillRect(0,0,960,540);
+for(var i=0;i<12;i++){rect(i*98-12,155+(i%3)*16,70,90-(i%3)*12,world==="wishborn"?"#1e4a48":"#23334e");rect(i*98+1,174+(i%3)*16,13,18,"#e5cc8560");}
+rect(0,290,960,250,world==="wishborn"?"#234b40":world==="creature"?"#1c4a4a":"#253247");
+for(var j=0;j<13;j++){ctx.strokeStyle="#7895a418";ctx.beginPath();ctx.moveTo(0,300+j*21);ctx.lineTo(960,300+j*21);ctx.stroke();}
+for(var k=0;k<20;k++){ctx.strokeStyle="#a9c0e514";ctx.beginPath();ctx.moveTo(k*48,300);ctx.lineTo(k*48,540);ctx.stroke();}
+}
+function player(){var x=state.player.x*48,y=state.player.y*44+7;ctx.fillStyle="#06131caa";ctx.beginPath();ctx.ellipse(x,y+28,20,9,0,0,7);ctx.fill();rect(x-10,y-13,20,31,"#2dd4c5");rect(x-8,y+17,8,12,"#c9e7e6");rect(x+2,y+17,8,12,"#c9e7e6");ctx.fillStyle="#6f412d";ctx.beginPath();ctx.arc(x,y-24,14,0,7);ctx.fill();rect(x-14,y-39,28,11,"#1b171d");txt("◆",x,y-43,14,"#ffe28e","center");txt(state.player.name,x,y+50,12,"#fff7df","center");}
+function draw(){background();var p=state.progress;
+if(world==="valence"){rect(74,319,250,145,"#213547");rect(78,319,242,12,"#65c5c4");txt("YOUR HOME",101,348,20,"#c9fff1");object(4,9,"#7fa8bd","REST","☾");object(15,4,"#ffdd8a","WORK","$");object(5,3,"#81eab3","WISHBORN","✿");object(13,10,"#e7bb6b","GRIDIRON","★");object(17,8,"#ab97ea","METAL","⚡");object(9,5,"#79e0dc","KOPANI","✦");}
+else if(world==="wishborn"){for(var x=7;x<17;x+=2){rect(x*48,355,49,105,"#3a3426");rect(x*48+10,364,4,90,"#588452");}object(12,6,p.gardenStage===0?"#b8996f":"#77c891","DREAMSEED","✿");txt("STAGE "+p.gardenStage+" / 3",30,75,25,"#e6ffe5");txt("SEEDS "+p.seeds,30,103,18,"#ffdb83");}
+else if(world==="creature"){object(12,6,"#70d7bf","NA · TRUST "+p.trust,"✦");for(var a=0;a<12;a++){ctx.fillStyle="#3fa48499";ctx.beginPath();ctx.arc((a*79+25)%960,320+(a*97)%190,8+(a%3)*5,0,7);ctx.fill();}}
+else if(world==="gridiron"){rect(0,310,960,230,"#196048");for(var f=0;f<8;f++){rect(f*130,328,3,200,"#d0eee04d");txt(String((f+1)*10),f*130+12,367,16,"#c6eed9");}var marker=(Math.sin(performance.now()/600)+1)/2;rect(175,220,610,35,"#0e2230");rect(418,220,124,35,"#49e9b7");rect(175+marker*599,211,12,52,"#ffe4a3");txt("PRESS E WHEN THE WHITE LINE ENTERS GREEN",195,183,19,"#fff1bc");txt("CATCHES "+p.gridiron+" · 3 PER WIN",195,289,17,"#fff1bc");}
+else if(world==="metal"){rect(0,310,960,230,"#2b2e4b");for(var m=0;m<6;m++){rect(70+m*155,310,45,170,"#545878");}object(enemy.x,enemy.y,"#e7a5b9",enemy.air?"RECOVERING":"DRONE","⚙");var precision=Math.abs(Math.sin(performance.now()/500));rect(250,205,460,22,"#111f2e");rect(250,205,460*precision,22,precision>.72?"#64f4ca":"#bd7a9c");txt("STRIKE ON THE CYAN PULSE",275,187,18,"#fff1bc");txt("HITS "+p.metalHits+" · 3 PER WIN",280,258,15,"#fff1bc");}
+else{txt(titles[world],480,165,26,"#f4deb1","center");txt("ORIGINAL SOURCE NOT YET IMPORTED",480,235,23,"#91b6c5","center");txt("No invented progress, credits or rewards.",480,276,18,"#eef6fb","center");}
+player();rect(12,12,240,38,"#0a1521c4");txt("ENERGY "+p.energy+"  ·  XP "+p.xp,24,38,16,"#c4ffed");
+if(notice&&performance.now()<noticeUntil){rect(20,473,920,49,"#07121ee6");txt(notice,40,505,17,"#ffdf8b");}
+}
+function hint(){var h="";if(world==="valence")h="Walk near WORK (top right), REST (bottom left), or glowing gates; press E.";if(world==="wishborn")h="Approach DREAMSEED and press E to plant, water and harvest; stages persist.";if(world==="creature")h="Approach Na. Offer a DreamSeed to increase trust and form a persistent bond.";if(world==="gridiron")h="Watch the sliding marker. Press E only inside the green catch zone. Button spam misses.";if(world==="metal")h="Approach drone, then strike with E when the meter turns cyan. Knockback lands safely.";if(["ghouly","worldbuilder","arcade"].includes(world))h="This world has a registry slot, not an imported playable game. Source audit required.";document.getElementById("hint").textContent=h;}
+function frame(t){var dt=clamp((t-last)/1000||.016,0,.05);last=t;var dx=(activeKeys.ArrowRight||activeKeys.d?1:0)-(activeKeys.ArrowLeft||activeKeys.a?1:0),dy=(activeKeys.ArrowDown||activeKeys.s?1:0)-(activeKeys.ArrowUp||activeKeys.w?1:0);
+if(heldMove){dx+=(heldMove==="right"?1:heldMove==="left"?-1:0);dy+=(heldMove==="down"?1:heldMove==="up"?-1:0);}
+var pads=navigator.getGamepads?navigator.getGamepads():[];var pad=Array.from(pads).find(function(x){return x&&x.connected;});if(pad){dx+=Math.abs(pad.axes[0])>.2?pad.axes[0]:0;dy+=Math.abs(pad.axes[1])>.2?pad.axes[1]:0;var down=!!(pad.buttons[0]&&pad.buttons[0].pressed);if(down&&!gamepadActionWasDown)interact();gamepadActionWasDown=down;}else gamepadActionWasDown=false;
+var l=Math.hypot(dx,dy);if(l>.01){state.player.x=clamp(state.player.x+dx/l*dt*3.3,1,19);state.player.y=clamp(state.player.y+dy/l*dt*3.3,2.4,10.5);}
+if(world==="metal"){if(enemy.air){enemy.y+=enemy.vy*dt*3;enemy.vy+=19*dt; if(enemy.y>=8){enemy.y=8;enemy.vy=0;enemy.air=0;}}else{enemy.x=13+Math.sin(t/1100)*1.3;}}
+draw();requestAnimationFrame(frame);}
+document.querySelectorAll("[data-world]").forEach(function(b){b.addEventListener("click",function(){travel(b.dataset.world);hint();});});document.getElementById("home").onclick=function(){travel("valence");hint();};
+document.getElementById("action").onclick=interact;document.getElementById("actionTouch").onclick=interact;
+document.querySelectorAll("[data-move]").forEach(function(b){b.addEventListener("pointerdown",function(e){e.preventDefault();heldMove=b.dataset.move;b.setPointerCapture(e.pointerId);});["pointerup","pointercancel","lostpointercapture"].forEach(function(k){b.addEventListener(k,function(){heldMove=null;});});});
+window.addEventListener("keydown",function(e){var tag=document.activeElement.tagName;if(tag==="INPUT"||tag==="SELECT")return;var k=e.key.toLowerCase();if(["arrowup","arrowdown","arrowleft","arrowright"," "].includes(k))e.preventDefault();activeKeys[k.length===1?k:e.key]=true;if(k==="e"&&!e.repeat)interact();});window.addEventListener("keyup",function(e){var k=e.key.toLowerCase();activeKeys[k.length===1?k:e.key]=false;});
+document.getElementById("name").addEventListener("change",function(e){state.player.name=e.target.value.trim().slice(0,22)||"MELLA";save();});
+document.getElementById("crown").addEventListener("change",function(e){state.player.crown=e.target.value;save();msg("Crown choice stored as an editable demo placeholder.");});
+document.getElementById("export").onclick=function(){var data=JSON.stringify(state,null,2),blob=new Blob([data],{type:"application/json"}),a=document.createElement("a"),u=URL.createObjectURL(blob);a.href=u;a.download="YOUR_MELLA_SAVE.json";a.click();setTimeout(function(){URL.revokeObjectURL(u);},1000);};
+document.getElementById("reset").onclick=function(){if(confirm("Reset this demo's YOUR progress in this browser?")){state=defaults();world="valence";state.player.x=7;state.player.y=7;save();msg("Local demo reset.");hint();}};
+document.getElementById("importSave").addEventListener("change",async function(e){var file=e.target.files[0];if(!file)return;try{if(file.size>300000)throw Error("Save file too large.");state=clean(JSON.parse(await file.text()));world="valence";state.player.x=7;state.player.y=7;save();hint();msg("YOUR save restored.");}catch(err){msg("Save not imported: "+err.message);}e.target.value="";});
+window.addEventListener("pagehide",function(){state.sections[world]={x:state.player.x,y:state.player.y};save();});refresh();hint();requestAnimationFrame(frame);
+})();
+</script></body></html>
