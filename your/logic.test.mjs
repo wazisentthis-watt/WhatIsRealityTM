@@ -14,7 +14,7 @@ function boot(start){
  let time=10000,callback,events={},printed=[];
  const storage=new Map(start?[["wir.your.vertical.v1",JSON.stringify(start)]]:[]);
  const brush={fillRect(){},beginPath(){},ellipse(){},fill(){},arc(){},fillText(s){printed.push(String(s))},moveTo(){},lineTo(){},stroke(){},createLinearGradient(){return{addColorStop(){}}}};
- const el=()=>({dataset:{},value:"",textContent:"",classList:{toggle(){}},listeners:{},addEventListener(k,f){this.listeners[k]=f},replaceChildren(){},append(){},getContext(){return brush},setPointerCapture(){},click(){}});
+ const el=()=>({dataset:{},value:"",textContent:"",classList:{toggle(){}},listeners:{},addEventListener(k,f){this.listeners[k]=f},replaceChildren(){},append(){},appendChild(){},getContext(){return brush},setPointerCapture(){},click(){}});
  const elements={};const worlds={};for(const w of ["valence","wishborn","creature","gridiron","metal","ghouly","worldbuilder","arcade"]){worlds[w]=el();worlds[w].dataset.world=w}
  const controls=["left","right","up","down"].map(n=>{const b=el();b.dataset.move=n;return b});
  const dom={getElementById(k){return elements[k]||(elements[k]=el())},querySelectorAll(q){return q==="[data-world]"?Object.values(worlds):q==="[data-move]"?controls:[]},createElement(){return el()},activeElement:{tagName:"BODY"}};
